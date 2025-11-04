@@ -20,11 +20,11 @@
 <a id="item-one"></a>
 ## Install
 ```
-npm install react-best-gradient-color-picker
+npm install react-gr-cl-picker
 ```
 
 ```
-yarn add react-best-gradient-color-picker
+yarn add react-gr-cl-picker
 ```
 
 <a id="item-two"></a>

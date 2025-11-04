@@ -46,6 +46,7 @@ const Picker = ({
           hideGradientAngle={hideGradientAngle}
           hideAdvancedSliders={hideAdvancedSliders}
           hideGradientControls={hideGradientControls}
+          hideGradientBar={hideGradientBar}
         />
       )}
       {isGradient && !hideGradientBar && <GradientBar />}

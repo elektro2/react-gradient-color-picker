@@ -1,7 +1,7 @@
 {
-  "name": "react-gradient-color-picker",
-  "version": "3.0.15-rc1",
-  "description": "An easy to use color/gradient picker for React.js",
+  "name": "react-gr-cl-picker",
+  "version": "1.0.0",
+  "description": "A fork of react-best-gradient-color-picker",
   "type": "module",
   "sideEffects": [
     "*.css"
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hxf31891/react-gradient-color-picker.git"
+    "url": "git+https://github.com/elektro2/react-gradient-color-picker.git"
   },
   "keywords": [
     "gradient",
@@ -45,8 +45,8 @@
     "editor"
   ],
   "author": {
-    "name": "Harry Fox",
-    "email": "hxfox1@gmail.com"
+    "name": "Rafael Rico Díaz",
+    "email": "rafardiaz@gmail.com"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",

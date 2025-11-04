@@ -16,8 +16,10 @@ const ColorTypeBtns = ({
   isGradient,
   setSolid,
   locales,
+  hideGradientBar,
 }: {
   hideColorTypeBtns?: boolean
+  hideGradientBar?: boolean
   isGradient?: boolean
   setSolid: () => void
   setGradient: () => void
@@ -45,14 +47,16 @@ const ColorTypeBtns = ({
         >
           {locales?.CONTROLS?.SOLID}
         </div>
-        <div
-          onClick={setGradient}
-          id={`rbgcp-gradient-btn${pickerIdSuffix}`}
-          style={colorTypeBtnStyles(isGradient ?? false, defaultStyles)}
-          // className="rbgcp-control-btn rbgcp-gradient-btn"
-        >
-          {locales?.CONTROLS?.GRADIENT}
-        </div>
+        {!hideGradientBar && (
+          <div
+            onClick={setGradient}
+            id={`rbgcp-gradient-btn${pickerIdSuffix}`}
+            style={colorTypeBtnStyles(isGradient ?? false, defaultStyles)}
+            // className="rbgcp-control-btn rbgcp-gradient-btn"
+          >
+            {locales?.CONTROLS?.GRADIENT}
+          </div>
+        )}
       </div>
     )
   }
