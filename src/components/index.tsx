@@ -26,6 +26,7 @@ export function ColorPicker({
   hideGradientAngle = false,
   hideGradientStop = false,
   hideGradientControls = false,
+  hideGradientBar = false,
   locales = defaultLocales,
   width = 294,
   height = 294,
@@ -87,6 +88,7 @@ export function ColorPicker({
           hideGradientAngle={hideGradientAngle}
           hideGradientStop={hideGradientStop}
           hideGradientControls={hideGradientControls}
+          hideGradientBar={hideGradientBar}
           hidePickerSquare={hidePickerSquare}
           locales={locales}
         />

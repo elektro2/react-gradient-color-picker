@@ -1,6 +1,5 @@
 import {
   isUpperCase,
-  getNewHsl,
   getGradientType,
   getDegrees,
 } from '../src/utils/utils'
@@ -16,21 +15,7 @@ describe('isUpperCase', () => {
   })
 })
 
-describe('getNewHsl', () => {
-  it('should return correct RGBA color for given HSL color', () => {
-    const callback = () => {}
-    const output = getNewHsl(116, 79, 19, 0.5, callback)
 
-    expect(output).toEqual('rgba(15, 87, 10, 0.5)')
-  })
-
-  it('should trigger callback with correct arguments', () => {
-    const callback = jest.fn()
-    getNewHsl(116, 79, 19, 0.5, callback)
-
-    expect(callback).toHaveBeenCalledWith(116)
-  })
-})
 
 describe('getGradientType', () => {
   it('should pick the correct prefix of gradient values', () => {

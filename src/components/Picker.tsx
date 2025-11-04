@@ -27,6 +27,7 @@ const Picker = ({
   hideColorTypeBtns,
   hideAdvancedSliders,
   hideGradientControls,
+  hideGradientBar,
 }: PickerProps) => {
   const { isGradient, pickerIdSuffix } = usePicker()
 
@@ -47,7 +48,7 @@ const Picker = ({
           hideGradientControls={hideGradientControls}
         />
       )}
-      {isGradient && <GradientBar />}
+      {isGradient && !hideGradientBar && <GradientBar />}
       {!hideHue && <Hue />}
       {!hideOpacity && <Opacity />}
       {!hideInputs && <Inputs />}
@@ -76,4 +77,5 @@ type PickerProps = {
   hideGradientControls?: boolean
   locales?: LocalesProps
   hidePickerSquare?: boolean
+  hideGradientBar?: boolean
 }

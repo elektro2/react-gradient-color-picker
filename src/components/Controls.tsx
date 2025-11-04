@@ -175,7 +175,6 @@ const Controls = ({
   const allRightControlsHidden =
     hideEyeDrop && hideAdvancedSliders && hideColorGuide && hideInputType
   const allControlsHidden = allRightControlsHidden && hideColorTypeBtns
-  console.log('Hide Gradient Controls: ', hideGradientControls);
   if (allControlsHidden) {
     if (isGradient && !hideGradientControls) {
       return (

@@ -17,6 +17,7 @@ export type ColorPickerProps = {
   hideGradientAngle?: boolean
   hideGradientStop?: boolean
   hideGradientControls?: boolean
+  hideGradientBar?:boolean
   width?: number
   height?: number
   style?: Styles
